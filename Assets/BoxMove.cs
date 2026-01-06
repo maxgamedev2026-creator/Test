@@ -7,20 +7,44 @@ public class BoxMove : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log(123);
-        Debug.Log(456);
-        Debug.Log(5 + 6);
-        Debug.Log(5 * 6);
-        Debug.Log("Hello world");
-        Debug.Log("Hello world" + 5);
+        // Debug.Log(gameObject.name);
+        // Debug.Log(gameObject.tag);
 
-        Debug.
-            Log("Сумма " + 5 + " и " + 6 + " равна " + (5 + 6));
+        // gameObject.name = "My Super Cube";
+        // gameObject.SetActive(false);
+
+        // Debug.Log(gameObject.name);
+
+        // transform.position = new Vector3(0, 2, 0);
+        // transform.eulerAngles = new Vector3(0, 45, 30);
+        // transform.localScale = new Vector3(1, 2, 4);
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("Update");
+        if( Input.GetKey(KeyCode.W) )
+        {
+            transform.position += new Vector3(0, 0.03f, 0);
+        }
+
+        if (Input.GetKey(KeyCode.S))
+        {
+            transform.position += new Vector3(0, -0.03f, 0);
+        }
+
+        if(Input.GetMouseButtonDown(0))
+        {
+            transform.localScale *= 1.2f;
+        }
+
+        if (Input.GetMouseButtonDown(1))
+        {
+            transform.localScale *= 0.8f;
+        }
+
+        transform.localEulerAngles = new Vector3(0, Input.mousePosition.x, 0);
+        
     }
 }
