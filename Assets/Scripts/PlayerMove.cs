@@ -6,20 +6,17 @@ using UnityEngine;
 public class PlayerMove : MonoBehaviour
 {
 
-    [SerializeField] private float _speed;
-    private float _oldMousePositionX;
-    private float _eulerY;
-
-    void Start()
-    {
-        
-    }
+    [SerializeField] float _speed;
+    float _oldMousePositionX;
+    float _eulerY;
+    [SerializeField] Animator _animator;
 
     void Update()
     {
 
         if (Input.GetMouseButtonDown(0)) {
             _oldMousePositionX = Input.mousePosition.x;
+            _animator.SetBool("Run", true);
         }
 
         if (Input.GetMouseButton(0)) {
@@ -35,7 +32,9 @@ public class PlayerMove : MonoBehaviour
             transform.eulerAngles = new Vector3(0, _eulerY, 0);
         }
 
-      
+      if (Input.GetMouseButtonUp(0)) {
+            _animator.SetBool("Run", false);
+        }
 
     }
 }
