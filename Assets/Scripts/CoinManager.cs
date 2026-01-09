@@ -6,12 +6,28 @@ using UnityEngine;
 public class CoinManager : MonoBehaviour
 {
 
-    [SerializeField] int _numberOfCoinsInLevel1;
+    public int NumberOfCoins;
     [SerializeField] TextMeshProUGUI _text;
-    
-    public void AddOne() {
-        _numberOfCoinsInLevel1 += 1;
-        _text.text = _numberOfCoinsInLevel1.ToString();
+
+    private void Start()
+    {
+        NumberOfCoins = Progress.Instance.Coins;
+        _text.text = NumberOfCoins.ToString();
     }
 
+    public void AddOne() {
+        NumberOfCoins += 1;
+        _text.text = NumberOfCoins.ToString();
+    }
+
+    public void SaveToProgress()
+    {
+        Progress.Instance.Coins = NumberOfCoins;
+    }
+
+    public void SpendMoney(int value)
+    {
+        NumberOfCoins -= value;
+        _text.text = NumberOfCoins.ToString();
+    }
 }

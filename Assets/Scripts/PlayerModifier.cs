@@ -18,6 +18,12 @@ public class PlayerModifier : MonoBehaviour
 
     [SerializeField] Transform _colliderTransform;
 
+    private void Start()
+    {
+        SetWidth(Progress.Instance.Width);
+        SetHeight(Progress.Instance.Height);
+    }
+
     void Update()
     {
         float offsetY = _height * _heightMultiplier + 0.17f;
@@ -42,6 +48,17 @@ public class PlayerModifier : MonoBehaviour
 
     public void AddHeight(int value) {
         _height += value;
+    }
+
+    public void SetWidth(int value)
+    {
+        _width = value;
+        UpdateWidth();
+    }
+
+    public void SetHeight(int value)
+    {
+        _height = value;
     }
 
     public void HitBarrier()
