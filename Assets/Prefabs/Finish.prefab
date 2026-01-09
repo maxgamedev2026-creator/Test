@@ -181,7 +181,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 705b1089010c9774993bc9312f7a465e, type: 2}
+  - {fileID: 2100000, guid: 979079ab7c1f6b645b35779ada543bff, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -236,6 +236,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d14a93709000c1a44b2674e906b67054, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _bricksEffectPrefab: {fileID: 892544658790673868, guid: 477ad44dff004774587feb24be51735f,
+    type: 3}
 --- !u!1 &2876721727264299772
 GameObject:
   m_ObjectHideFlags: 0
@@ -299,7 +301,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 705b1089010c9774993bc9312f7a465e, type: 2}
+  - {fileID: 2100000, guid: 979079ab7c1f6b645b35779ada543bff, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -354,6 +356,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d14a93709000c1a44b2674e906b67054, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _bricksEffectPrefab: {fileID: 892544658790673868, guid: 477ad44dff004774587feb24be51735f,
+    type: 3}
 --- !u!1 &3082978012846423888
 GameObject:
   m_ObjectHideFlags: 0
@@ -417,7 +421,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 705b1089010c9774993bc9312f7a465e, type: 2}
+  - {fileID: 2100000, guid: 979079ab7c1f6b645b35779ada543bff, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -472,6 +476,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d14a93709000c1a44b2674e906b67054, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _bricksEffectPrefab: {fileID: 892544658790673868, guid: 477ad44dff004774587feb24be51735f,
+    type: 3}
 --- !u!1 &3531990663614730227
 GameObject:
   m_ObjectHideFlags: 0
@@ -653,7 +659,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 705b1089010c9774993bc9312f7a465e, type: 2}
+  - {fileID: 2100000, guid: 979079ab7c1f6b645b35779ada543bff, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -708,6 +714,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d14a93709000c1a44b2674e906b67054, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _bricksEffectPrefab: {fileID: 892544658790673868, guid: 477ad44dff004774587feb24be51735f,
+    type: 3}
 --- !u!1 &4769352601552120045
 GameObject:
   m_ObjectHideFlags: 0
@@ -771,7 +779,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 705b1089010c9774993bc9312f7a465e, type: 2}
+  - {fileID: 2100000, guid: 979079ab7c1f6b645b35779ada543bff, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -826,6 +834,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d14a93709000c1a44b2674e906b67054, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _bricksEffectPrefab: {fileID: 892544658790673868, guid: 477ad44dff004774587feb24be51735f,
+    type: 3}
 --- !u!1 &5030728739069201233
 GameObject:
   m_ObjectHideFlags: 0
@@ -928,7 +938,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 705b1089010c9774993bc9312f7a465e, type: 2}
+  - {fileID: 2100000, guid: 979079ab7c1f6b645b35779ada543bff, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -983,3 +993,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d14a93709000c1a44b2674e906b67054, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _bricksEffectPrefab: {fileID: 892544658790673868, guid: 477ad44dff004774587feb24be51735f,
+    type: 3}

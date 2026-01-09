@@ -5,6 +5,7 @@ using UnityEngine;
 public class Barrier : MonoBehaviour
 {
 
+    [SerializeField] GameObject _bricksEffectPrefab;
     private void OnTriggerEnter(Collider other)
     {
         PlayerModifier playerModifier = other.attachedRigidbody.GetComponent<PlayerModifier>();
@@ -12,6 +13,7 @@ public class Barrier : MonoBehaviour
         {
             playerModifier.HitBarrier();
             Destroy(gameObject);
+            Instantiate(_bricksEffectPrefab, transform.position, transform.rotation);
         }
     }
 
