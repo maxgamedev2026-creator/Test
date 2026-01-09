@@ -18,6 +18,8 @@ public class PlayerModifier : MonoBehaviour
 
     [SerializeField] Transform _colliderTransform;
 
+    [SerializeField] AudioSource _increaseSound;
+
     private void Start()
     {
         SetWidth(Progress.Instance.Width);
@@ -44,10 +46,18 @@ public class PlayerModifier : MonoBehaviour
     public void AddWidth(int value) {
         _width += value;
         UpdateWidth();
+        if (value > 0)
+        {
+            _increaseSound.Play();
+        }
     }
 
     public void AddHeight(int value) {
         _height += value;
+        if (value > 0)
+        {
+            _increaseSound.Play();
+        }
     }
 
     public void SetWidth(int value)
