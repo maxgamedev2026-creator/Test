@@ -6,6 +6,10 @@
     <title>Unity WebGL Player | ManRun</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+
+    <!-- Yandex Games SDK -->
+    <script src="https://sdk.games.s3.yandex.net/sdk.js"></script>
+
   </head>
   <body>
     <!-- <div id="unity-container" class "unity-desktop">
@@ -25,6 +29,16 @@
         <div id="unity-build-title">ManRun</div>
       </div> -->
     </div>
+
+    <script>
+        YaGames
+    .init()
+    .then(ysdk => {
+        console.log('Yandex SDK initialized');
+        window.ysdk = ysdk;
+    });
+    </script>
+
     <script>
 
       var container = document.querySelector("#unity-container");
